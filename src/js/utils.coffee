@@ -1,3 +1,3 @@
 define [], ->
-    sayHello: (name="Albert Einstein")->
+    sayHello: (name="World")->
         console.log "Hello, #{name}"

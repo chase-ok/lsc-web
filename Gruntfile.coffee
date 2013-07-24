@@ -36,21 +36,31 @@ module.exports = (grunt) ->
                 cwd: 'src/js'
                 src: '**/*.js'
                 dest: 'build/js'
-            css:
-                expand: true
-                cwd: 'src/css'
-                src: '**/*'
-                dest: 'deploy/css'
-            html:
-                expand: true
-                cwd: 'src/html'
-                src: '**/*'
-                dest: 'deploy/html'
             jsLib:
                 expand: true
                 cwd: 'lib/js'
                 src: '**/*.js'
                 dest: 'deploy/js/lib'
+            css:
+                expand: true
+                cwd: 'src/css'
+                src: '**/*'
+                dest: 'deploy/css'
+            cssLib:
+                expand: true
+                cwd: 'lib/css'
+                src: '**/*'
+                dest: 'deploy/css/lib'
+            html:
+                expand: true
+                cwd: 'src/html'
+                src: '**/*'
+                dest: 'deploy/html'
+            htmlLib:
+                expand: true
+                cwd: 'lib/html'
+                src: '**/*'
+                dest: 'deploy/html/lib'
         
         clean:
             build: 'build'
